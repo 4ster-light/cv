@@ -1,0 +1,91 @@
+\documentclass{ats-resume}
+\usepackage[english]{babel}
+
+\hypersetup{
+  pdftitle={David Vivar Bogonez - CV},
+  pdfauthor={David Vivar Bogonez},
+  pdfsubject={Computer Engineering Student and Open Source Developer},
+  pdfkeywords={Python, Rust, TypeScript, Scala, SQL, PostgreSQL, SQLite, Linux, Nix, Docker, Podman, HTTP, WebSockets}
+}
+
+\begin{document}
+
+\begin{center}
+  \resumeName{David Vivar Bogónez}
+  \resumeTitle{Computer Engineering Student $|$ Open Source Developer}
+  \resumeContact{Ciudad Real, Spain $|$ \href{mailto:me@4ster.dev}{me@4ster.dev} $|$ \href{https://4ster.dev}{4ster.dev} $|$ \href{https://github.com/4ster-light}{github.com/4ster-light} $|$ \href{https://linkedin.com/in/4ster}{linkedin.com/in/4ster}}
+\end{center}
+
+\section{SUMMARY}
+Computer Engineering undergraduate at the Universidad de Castilla-La Mancha (UCLM) and open-source developer. Technical focus on systems programming, networking, developer tooling, and Linux, with primary development experience in Rust and Python. Native Spanish speaker with Cambridge English C1 certification.
+
+\section{EDUCATION}
+\resumeSubheading
+  {Universidad de Castilla-La Mancha (UCLM)}
+  {Ciudad Real, Spain}
+  {BSc in Computer Engineering, Escuela Superior de Ingeniería (ESI)}
+  {2025 -- Present}
+
+\section{TECHNICAL SKILLS}
+\resumeLine{Languages}{Python, Rust, TypeScript, Scala, SQL, QML}
+\resumeLine{Databases}{PostgreSQL, SQLite}
+\resumeLine{Tools and platforms}{Linux, Nix, Docker, Podman, Git}
+\resumeLine{Areas}{Systems programming, network programming, concurrency, databases, operating systems, developer tooling}
+
+\section{PROJECTS}
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/artscii}{artscii}} $|$ \emph{Rust}}
+  {\href{https://artscii.pages.dev}{artscii.pages.dev}}
+\resumeItemListStart
+  \resumeItem{Rust workspace for image and video to ASCII conversion with a CLI, reusable library crates, and a WebAssembly web app.}
+  \resumeItem{Supports multiple dithering algorithms, ANSI, HTML, GIF, and MP4 output, with reproducible Nix packaging.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/sentinel}{sentinel}} $|$ \emph{Python}}
+  {}
+\resumeItemListStart
+  \resumeItem{Python CLI for process supervision with process groups, log rotation, HTTP/TCP health checks, and persistent state.}
+  \resumeItem{Provides real-time CPU, memory, and uptime monitoring, JSON/table metrics export, remote SSH management, and systemd unit generation.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/http}{http}} $|$ \emph{Rust}}
+  {}
+\resumeItemListStart
+  \resumeItem{Built the reusable \texttt{http} and \texttt{websocket} Rust crates and a demo server, implementing HTTP/1.1 and RFC 6455 from scratch on Tokio.}
+  \resumeItem{Includes RFC compliance matrices, architecture and threat-model documentation, fuzzed parsers, CI regression tests, and Docker Compose offensive demos.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/bfcompiler}{bfcompiler}} $|$ \emph{Rust}}
+  {\href{https://bfcompiler.pages.dev}{bfcompiler.pages.dev}}
+\resumeItemListStart
+  \resumeItem{Rust workspace with a Brainfuck compiler, resumable interpreter, terminal REPL, and WebAssembly playground.}
+  \resumeItem{Compiles Brainfuck to Rust source and native executables, with instruction budgets to pause non-terminating programs.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/perlin}{perlin}} $|$ \emph{Scala}}
+  {}
+\resumeItemListStart
+  \resumeItem{Scala 3 engine for infinite procedural terrain with layered Perlin and ridged noise, biomes, deterministic seeds, and parallel generation strategies.}
+  \resumeItem{First-person software 3D renderer with chunk streaming plus PNG, ANSI, and SVG map export.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/go-pane}{go-pane}} $|$ \emph{QML}}
+  {}
+\resumeItemListStart
+  \resumeItem{Self-contained KDE Plasma 6 QML plasmoid for live OpenCode Go usage across rolling, weekly, and monthly windows.}
+  \resumeItem{Calculates pace ratios, projected usage, and exhaustion estimates, with API key discovery and configurable warning thresholds.}
+\resumeItemListEnd
+
+\vspace{0.25em}
+\noindent\textbf{Additional projects:} \href{https://github.com/4ster-light/pmatrix}{pmatrix} (Python), \href{https://github.com/4ster-light/particles}{particles} (TypeScript), \href{https://github.com/4ster-light/py-logic}{py-logic} (Python).
+
+\section{LANGUAGES}
+\resumeLine{Spanish}{Native}
+\resumeLine{English}{C1 Advanced (Cambridge English)}
+
+\end{document}

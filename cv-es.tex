@@ -1,0 +1,92 @@
+\documentclass{ats-resume}
+\usepackage[provide=*]{babel}
+\babelprovide[main,import]{spanish}
+
+\hypersetup{
+  pdftitle={David Vivar Bogonez - Currículum},
+  pdfauthor={David Vivar Bogonez},
+  pdfsubject={Estudiante de Ingeniería Informática y desarrollador de código abierto},
+  pdfkeywords={Python, Rust, TypeScript, Scala, SQL, PostgreSQL, SQLite, Linux, Nix, Docker, Podman, HTTP, WebSockets}
+}
+
+\begin{document}
+
+\begin{center}
+  \resumeName{David Vivar Bogónez}
+  \resumeTitle{Estudiante de Ingeniería Informática $|$ Desarrollador de código abierto}
+  \resumeContact{Ciudad Real, España $|$ \href{mailto:me@4ster.dev}{me@4ster.dev} $|$ \href{https://4ster.dev}{4ster.dev} $|$ \href{https://github.com/4ster-light}{github.com/4ster-light} $|$ \href{https://linkedin.com/in/4ster}{linkedin.com/in/4ster}}
+\end{center}
+
+\section{PERFIL}
+Estudiante de Ingeniería Informática en la Universidad de Castilla-La Mancha (UCLM) y desarrollador de código abierto. Enfoque técnico en programación de sistemas, redes, herramientas para desarrolladores y Linux, con experiencia principal en Rust y Python. Hablante nativo de español con certificación C1 de Cambridge en inglés.
+
+\section{EDUCACIÓN}
+\resumeSubheading
+  {Universidad de Castilla-La Mancha (UCLM)}
+  {Ciudad Real, España}
+  {Grado en Ingeniería Informática, Escuela Superior de Ingeniería (ESI)}
+  {2025 -- Actualidad}
+
+\section{COMPETENCIAS TÉCNICAS}
+\resumeLine{Lenguajes}{Python, Rust, TypeScript, Scala, SQL, QML}
+\resumeLine{Bases de datos}{PostgreSQL, SQLite}
+\resumeLine{Herramientas y plataformas}{Linux, Nix, Docker, Podman, Git}
+\resumeLine{Áreas}{Programación de sistemas, programación de redes, concurrencia, bases de datos, sistemas operativos, herramientas para desarrolladores}
+
+\section{PROYECTOS}
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/artscii}{artscii}} $|$ \emph{Rust}}
+  {\href{https://artscii.pages.dev}{artscii.pages.dev}}
+\resumeItemListStart
+  \resumeItem{Workspace de Rust para convertir imágenes y vídeo a arte ASCII con CLI, crates reutilizables y aplicación web en WebAssembly.}
+  \resumeItem{Incluye varios algoritmos de tramado, salida ANSI, HTML, GIF y MP4, y empaquetado reproducible con Nix.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/sentinel}{sentinel}} $|$ \emph{Python}}
+  {}
+\resumeItemListStart
+  \resumeItem{CLI en Python para supervisión de procesos con grupos, rotación de logs, comprobaciones de salud HTTP/TCP y estado persistente.}
+  \resumeItem{Ofrece monitorización de CPU, memoria y tiempo de actividad, exportación de métricas en JSON y tabla, gestión remota por SSH y generación de unidades systemd.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/http}{http}} $|$ \emph{Rust}}
+  {}
+\resumeItemListStart
+  \resumeItem{Desarrollo de los crates \texttt{http} y \texttt{websocket} como bibliotecas Rust reutilizables y un servidor de demostración, implementando HTTP/1.1 y RFC 6455 desde cero sobre Tokio.}
+  \resumeItem{Incluye matrices de cumplimiento de RFC, documentación de arquitectura y modelo de amenazas, parsers sometidos a fuzzing, pruebas de regresión en CI y demos ofensivas con Docker Compose.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/bfcompiler}{bfcompiler}} $|$ \emph{Rust}}
+  {\href{https://bfcompiler.pages.dev}{bfcompiler.pages.dev}}
+\resumeItemListStart
+  \resumeItem{Espacio de trabajo de Rust con compilador de Brainfuck, intérprete reanudable, REPL de terminal y entorno interactivo WebAssembly.}
+  \resumeItem{Compila Brainfuck a código Rust y ejecutables nativos, con límites de instrucciones para pausar programas no terminantes.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/perlin}{perlin}} $|$ \emph{Scala}}
+  {}
+\resumeItemListStart
+  \resumeItem{Motor en Scala 3 para terreno procedural infinito con ruido Perlin y ridged multicapa, biomas, semillas deterministas y generación paralela.}
+  \resumeItem{Renderizador 3D por software en primera persona con chunks dinámicos y exportación PNG, ANSI y SVG.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{\href{https://github.com/4ster-light/go-pane}{go-pane}} $|$ \emph{QML}}
+  {}
+\resumeItemListStart
+  \resumeItem{Plasmoide QML autocontenido para KDE Plasma 6 que muestra el uso de OpenCode Go en ventanas deslizantes, semanal y mensual.}
+  \resumeItem{Calcula índices de ritmo, uso proyectado y estimaciones de agotamiento, con descubrimiento de claves API y umbrales de aviso configurables.}
+\resumeItemListEnd
+
+\vspace{0.25em}
+\noindent\textbf{Otros proyectos:} \href{https://github.com/4ster-light/pmatrix}{pmatrix} (Python), \href{https://github.com/4ster-light/particles}{particles} (TypeScript), \href{https://github.com/4ster-light/py-logic}{py-logic} (Python).
+
+\section{IDIOMAS}
+\resumeLine{Español}{Nativo}
+\resumeLine{Inglés}{C1 Advanced (Cambridge English)}
+
+\end{document}
