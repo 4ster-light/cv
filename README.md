@@ -7,26 +7,28 @@ The layout is based on the widely used Jake's Resume structure, adapted for A4 a
 ## Files
 
 - `ats-resume.cls` - shared ATS-friendly layout class
-- `cv-en.tex` - English CV
-- `cv-es.tex` - Spanish CV
-- `Makefile` - builds both PDFs
+- `David_Vivar_Bogonez_CV_EN.tex` - English CV source
+- `David_Vivar_Bogonez_CV_ES.tex` - Spanish CV source
+- `David_Vivar_Bogonez_CV_EN.pdf`, `David_Vivar_Bogonez_CV_ES.pdf` - compiled PDFs
 
 ## Build
 
-```sh
-make
-```
-
-Or compile directly:
+The build does not use `make`. Compile each document directly with pdfTeX from the repository root:
 
 ```sh
-pdflatex cv-en.tex
-pdflatex cv-es.tex
+pdflatex David_Vivar_Bogonez_CV_EN.tex
+pdflatex David_Vivar_Bogonez_CV_ES.tex
 ```
 
-The Spanish file uses Babel's `provide=*` mechanism, so use a current TeX Live or Overleaf version.
+Run the commands a second time on a clean checkout, or after changing hyperlinks, so that hyperref can write the final bookmarks and metadata.
 
-The resulting PDFs are `David_Vivar_Bogonez_CV_EN.pdf` and `David_Vivar_Bogonez_CV_ES.pdf`.
+The Spanish source uses Babel's `provide=*` mechanism, so use a current TeX Live version (or Overleaf).
+
+Each PDF is generated next to its source using the same base name (for example, `David_Vivar_Bogonez_CV_EN.tex` produces `David_Vivar_Bogonez_CV_EN.pdf`).
+
+### TeXstudio
+
+Open either `.tex` file in TeXstudio and use Build & View (`F5`). TeXstudio calls the system `pdflatex`, so no extra configuration is needed. Intermediate files such as `.aux`, `.log`, `.out`, and `.synctex.gz` are ignored by Git; only the sources, class file, and final PDFs are tracked.
 
 ## ATS notes
 

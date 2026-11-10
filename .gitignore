@@ -1,4 +1,35 @@
+# LaTeX build artifacts
 *.aux
 *.log
 *.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
 *.synctex.gz
+*.synctex(busy)
+*.synctex.gz(busy)
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.idx
+*.ilg
+*.ind
+*.lpr
+*.spl
+*.table
+*.auxlock
+*.upa
+*.upb
+
+# TeXstudio
+*.tex.bak
+*.bak
+.texstudio/
+texstudio.ini
