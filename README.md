@@ -36,7 +36,7 @@ Open either `.tex` file in TeXstudio and use Build & View (`F5`). TeXstudio call
 - Keep the CV to one page until you have enough experience to justify a second.
 - Tailor the summary, skills, and project bullets to the keywords in each job posting.
 - No photo, columns, tables, icons, or graphics are used for content.
-- Standard section headings are used: Summary/Profile, Education, Technical Skills, Projects, Languages.
+- Standard section headings are used: Summary/Profile, Education, Technical Skills, Certifications, Projects, and Languages (`Certificaciones`, `Proyectos`, and `Idiomas` in Spanish).
 - Colored hyperlinks do not affect ATS parsing because the underlying text layer is unchanged.
 - The education dates are set to `2025 -- Present` in English and `2025 -- Actualidad` in Spanish. Update them if needed.
 - A phone number is intentionally omitted. Add one to the header if the application requires it.
